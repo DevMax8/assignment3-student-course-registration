@@ -4,8 +4,8 @@ import java.time.LocalDateTime;
 
 public class Enrollment extends BaseEntity {
 
-    private Student student;   // 🔥 composition
-    private Course course;     // 🔥 composition
+    private Student student; 
+    private Course course;    
     private LocalDateTime enrolledAt;
 
     public Enrollment() {}
