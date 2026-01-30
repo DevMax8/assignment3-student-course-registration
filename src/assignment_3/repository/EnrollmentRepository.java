@@ -29,7 +29,7 @@ public class EnrollmentRepository {
 
             while (rs.next()) {
 
-                // 🔹 Student object
+                
                 Student student = new Student(
                         rs.getInt("sid"),
                         rs.getString("sname"),
@@ -37,14 +37,14 @@ public class EnrollmentRepository {
                         rs.getInt("age")
                 );
 
-                // 🔹 Course object
+              
                 Course course = new Course(
                         rs.getInt("cid"),
                         rs.getString("cname"),
                         rs.getInt("credits")
                 );
 
-                // 🔹 Enrollment (composition)
+             
                 Enrollment enrollment = new Enrollment(
                         rs.getInt("id"),
                         student,
